@@ -1,0 +1,19 @@
+[project]
+name = "tris"
+version = "0.1.0"
+description = "Transaction Risk Intelligence System - PaySim ingestion foundation"
+requires-python = ">=3.12,<3.13"
+dependencies = ["duckdb>=1.0", "networkx>=3.0", "plotly>=5.0"]
+
+[project.optional-dependencies]
+dev = ["pytest>=8.0"]
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

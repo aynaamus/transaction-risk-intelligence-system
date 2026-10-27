@@ -1,0 +1,36 @@
+# Environments
+.venv/
+venv/
+__pycache__/
+*.egg-info/
+.pytest_cache/
+
+# Data and generated databases
+data/raw/
+data/*.csv
+*.csv
+*.duckdb
+*.duckdb.wal
+*.wal
+*.db
+*.parquet
+
+# Credentials
+.env
+.env.*
+*.pem
+*.key
+credentials*.json
+
+# Temporary / OS / editor
+*.tmp
+tmp/
+.DS_Store
+.idea/
+.vscode/
+
+# Generated exports
+data/exports/
+.streamlit/secrets.toml
+
+.DS_Store
